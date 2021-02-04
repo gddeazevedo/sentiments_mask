@@ -1,0 +1,7 @@
+__pycache__
+.vscode
+venv
+api/keys.py
+api/urls.py
+examples/nlu_ibm_watson/keys.py
+examples/nlu_ibm_watson/urls.py
