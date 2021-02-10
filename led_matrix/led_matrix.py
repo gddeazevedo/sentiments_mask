@@ -59,7 +59,6 @@ class LedMatrix:
             self.max_single(col + 1, int(''.join(str(v) for v in pointlist), 2))
 
     def setup(self):
-        print('Initializing matrix...')
         self._digital_write(13, HIGH)
         self.max_all(max_7219_reg_scan_limit, 0x07)
         self.max_all(max_7219_reg_decode_mode, 0x00)
@@ -67,4 +66,3 @@ class LedMatrix:
         self.max_all(max_7219_reg_display_test, 0x00)
         self.clear()
         self.max_all(max_7219_reg_intensity, 0x0f & 0x0f)
-        print('Done')
