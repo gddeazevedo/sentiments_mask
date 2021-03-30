@@ -1,7 +1,7 @@
 from led_matrix.led_matrix import LedMatrix
 from pyfirmata import Arduino
-from natural_language_understanding import fetch_watson_and_return_sentiment_label
-from speech_to_text import get_text_converted_from_speech
+from natural_language_understanding.natural_language_understanding import fetch_watson_and_return_sentiment_label
+from speech_to_text.speech_to_text import get_text_converted_from_speech
 
 
 usb_port = 'COM3'
